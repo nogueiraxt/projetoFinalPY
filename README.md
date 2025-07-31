@@ -1,65 +1,47 @@
-# Projeto Final em Python
+# Gerenciador de Tarefas
 
-Este é um projeto de estudo desenvolvido como parte do curso de Python. Ele inclui várias funcionalidades para demonstrar o conhecimento adquirido durante o curso.
+Este projeto é um aplicativo simples de gerenciamento de tarefas com interface gráfica, desenvolvido em Python. Ele permite que o usuário adicione, visualize, edite e remova tarefas, salvando todas as informações em um banco de dados MySQL.
 
-## Funcionalidades
-
-- Manipulação de dados
-- Interação com APIs
-- Criação de interfaces gráficas
-- Testes automatizados
+## Recursos
+- Adicionar novas tarefas com descrição, data de início, data de término e status.
+- Visualizar todas as tarefas em uma tabela.
+- Editar detalhes de uma tarefa existente.
+- Marcar tarefas como "Concluída".
+- Remover todas as tarefas concluídas de uma só vez.
 
 ## Tecnologias
+- **Python:** Linguagem de programação principal.
+- **Tkinter:** Biblioteca padrão do Python para a criação da interface gráfica.
+- **tkcalendar:** Widget para seleção de datas na interface gráfica.
+- **mysql-connector-python:** Driver para conexão com o banco de dados MySQL.
 
-- Python
-- Flask (para a parte web)
-- Tkinter (para a interface gráfica)
-- Requests (para interação com APIs)
-- PyTest (para testes automatizados)
+## Pré-requisitos
+Antes de rodar a aplicação, você precisa ter o seguinte instalado:
+- **Python 3.x**
+- **Servidor MySQL**
 
-## Como rodar
+## Configuração do Banco de Dados
+Para que a aplicação funcione corretamente, você deve configurar o banco de dados MySQL:
+1. Abra um cliente MySQL (como MySQL Workbench, DBeaver ou a linha de comando).
+2. Execute o script `scripts.sql` que está na raiz do projeto. Este script irá criar o banco de dados `todo` e a tabela `tarefas`.
 
-1. Clone o repositório:
+## Como Rodar o Projeto
+
+1.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/nogueiraxt/projetoFinalPY.git
-    ```
-
-2. Entre na pasta do projeto:
-    ```bash
+    git clone [https://github.com/nogueiraxt/projetoFinalPY.git](https://github.com/nogueiraxt/projetoFinalPY.git)
     cd projetoFinalPY
     ```
 
-3. (Opcional) Crie um ambiente virtual:
+2.  **Instale as dependências Python:**
     ```bash
-    python -m venv venv
-    source venv/bin/activate  # No Windows use `venv\Scripts\activate`
+    pip install tkcalendar
+    pip install mysql-connector-python
     ```
 
-4. Instale as dependências:
+3.  **Execute a aplicação:**
     ```bash
-    pip install -r requirements.txt
+    python app.py
     ```
 
-5. Rode a aplicação:
-    ```bash
-    python main.py
-    ```
-
-## Como usar
-
-Dependendo da funcionalidade que você deseja testar, siga as instruções específicas:
-
-- **Manipulação de dados**: Execute o script `data_manipulation.py`.
-    ```bash
-    python data_manipulation.py
-    ```
-
-- **Interação com APIs**: Execute o script `api_interaction.py`.
-    ```bash
-    python api_interaction.py
-    ```
-
-- **Interface gráfica**: Execute o script `gui.py`.
-    ```bash
-    python gui.py
-    ```
+A janela do aplicativo de gerenciamento de tarefas será exibida, e você poderá começar a usar!
