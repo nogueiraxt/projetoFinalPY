@@ -29,8 +29,8 @@ Para que a aplicação funcione corretamente, você deve configurar o banco de d
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/nogueiraxt/projetoFinalPY.git](https://github.com/nogueiraxt/projetoFinalPY.git)
-    cd projetoFinalPY
+    git clone https://github.com/nogueiraxt/gerenciador-de-tarefas.git
+    cd gerenciador-de-tarefas
     ```
 
 2.  **Instale as dependências Python:**
